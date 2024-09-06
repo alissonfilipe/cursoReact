@@ -1,3 +1,20 @@
+# anotações
+- npm install --> baixar as dependências do projeto
+- npm start --> rodar a aplicação
+- quando eu coloquei o endereço da imagem seguido de uma /150 não funcionou
+- mas quando eu coloquei o endereço da imagem apenas, funcionou
+- no JSX todos os elementos precisam estar na classe pai
+- class -> é uma palavra reservada do react e usando `className`
+- `<div className="App">`
+
+# aula
+- `aula 3` entendendo o JSX
+- `aula 4` criando os componentes
+
+# imagens grátis
+- https://pixabay.com/pt/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
