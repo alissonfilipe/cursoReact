@@ -9,10 +9,38 @@
 - Trabalhar com componentes comece com letras maiúsculas 
 - cada componente tendo o seu arquivo e cada arquivo sendo exportado
 - cada componente pode ser reutilizado
+- atalho crl - D para selecionar vários elementos iguais 
+
+- `aula 5` trabalhando com props
+    - props são somente leitura
+    - `<SayMyName nome="matheus"/>` forma de imprimir um valor
+    - em seguida a forma de declarar 
+    ```javascript
+    function SayMyName(props){
+
+    return (
+        <div>
+            <p>fala aí {props.nome}, tranks?</p>
+        </div>
+    )
+    }
+    ```
+    - nessa aula tivemos o reaproveitamento mais a parte dinâmica
+    - `<SayMyName nome={nome} />` forma de pegar valores de variáveis
+    - tivemos um componente bem mais complexo
+    - nessa mesma aula é ensinado que não precisa usar props
+    - faz uma desestruturação
+    - `function Pessoa({ nome, idade, profissao, foto}) ` basicamnete assim
+    - nessa foi foi finalizada com a desetruturação
+
+
+
+
 
 # aula
 - `aula 3` entendendo o JSX
 - `aula 4` criando os componentes
+- `aula 5` trabalhando com props
 
 # imagens grátis
 - https://pixabay.com/pt/

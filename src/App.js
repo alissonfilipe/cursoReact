@@ -1,25 +1,28 @@
 import './App.css';
-import HellWord from './components/HelloWorld';
+
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-  const name = "alisson"
+ 
+  const nome = "Labirinto"
 
-  function soma(a, b) {
-    return a + b
-  }
+  
 
-  const url = 'https://cdn.pixabay.com/photo/2024/05/04/01/25/white-tailed-eagle-8738135_640.jpg'
+  
+
+
 
   //retorno da função
   return (
 
     <div className="App"> 
-      <h1>Olá react</h1>
-      <p>bem vindo, {name}</p>
-      <p>a soma é {soma(1, 2)}</p>
-      <img src={url} alt="minha imagem"/>
 
-      <HellWord/>
+     
+      <SayMyName nome="matheus"/>
+      <SayMyName nome="alisson"/>
+      <SayMyName nome={nome} />
+      <Pessoa nome="Alisson" idade="21" profissao="Estagiário" foto="https://cdn.pixabay.com/photo/2018/03/26/20/49/tiger-3264048_640.jpg"/>
 
     </div>
   );
