@@ -6,6 +6,9 @@
 - no JSX todos os elementos precisam estar na classe pai
 - class -> é uma palavra reservada do react e usando `className`
 - `<div className="App">`
+- Trabalhar com componentes comece com letras maiúsculas 
+- cada componente tendo o seu arquivo e cada arquivo sendo exportado
+- cada componente pode ser reutilizado
 
 # aula
 - `aula 3` entendendo o JSX
