@@ -123,7 +123,8 @@
     - `ano_lancamento={1987}` forma de digitar o número
     - `number` a gente vai passar entre as chaves
     - `import PropTypes from 'prop-types'`
-    - o default é uma maneira bem simples de colocar valores padrões
+    - o default é uma maneira bem simples de colocar valores padrões 
+    <br>
           ```javascript
             import PropTypes from 'prop-types'
 
