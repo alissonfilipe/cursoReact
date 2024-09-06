@@ -30,8 +30,58 @@
     - tivemos um componente bem mais complexo
     - nessa mesma aula é ensinado que não precisa usar props
     - faz uma desestruturação
-    - `function Pessoa({ nome, idade, profissao, foto}) ` basicamnete assim
+    - basicamente assim
+        ```javascript
+       function Pessoa({ nome, idade, profissao, foto}) {
+        return (
+        <div>
+            <img src={foto} alt={nome}/>
+            <h2>Nome: {nome}</h2>
+            <p>Idade: {idade}</p>
+            <p>Profissão: {profissao}</p>
+        </div>
+            )
+        }
+    ```
     - nessa foi foi finalizada com a desetruturação
+
+- `aula 6` inserindo CSS no React
+    - o CSS pode ser adicionado de forma global na aplicação
+    - `Frase.module.css` é a declaração dos estilos de um módulo
+    - vamos ver como funciona isso
+    ```CSS
+        .fraseContainer {
+    background-color: #333;
+    border: 1px solid #111;
+    }
+
+    .fraseContent {
+        color: #fff;
+        background-color: #333;
+        margin: 0;
+    }
+    ```
+    - e essa é a forma de utilizar ele
+    - que é importando ele
+    - o padrão é styles
+
+     ```javascript
+    import styles from './Frase.module.css'
+
+    function Frase(){
+        return (
+            <div className={styles.fraseContainer}>
+                <p className={styles.fraseContent}>Este componente é uma frase</p>
+            </div>
+        )
+    }
+
+    export default Frase
+    ```
+    - não funciona assimno css `nome-sobrenome`
+    - use sempre `fraseContainer`
+
+
 
 
 
@@ -41,6 +91,7 @@
 - `aula 3` entendendo o JSX
 - `aula 4` criando os componentes
 - `aula 5` trabalhando com props
+- `aula 6` inserindo CSS no React
 
 # imagens grátis
 - https://pixabay.com/pt/
