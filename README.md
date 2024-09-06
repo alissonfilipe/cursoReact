@@ -65,7 +65,7 @@
     - que é importando ele
     - o padrão é styles
 
-     ```javascript
+    ```javascript
     import styles from './Frase.module.css'
 
     function Frase(){
@@ -82,16 +82,53 @@
     - use sempre `fraseContainer`
 
 
+- `aula 7` Utilizando React Fragments
+    - a sintaxe é uma tag vazia
+    - criamos no prórpio jsx
+    - o fragment é uma tag vazia
+
+    ```javascript
+        function List(){
+        return (
+            <>
+            
+            </>
+        )
+    }
+
+    export default List
+    ```
+
+    - esse aqui é o fragment com o reaproveitamento de componente
+        ```javascript
+        import Item from "./Item"
+
+        function List(){
+            return (
+                    <>
+                    <h1>Minha lista</h1>
+                    <ul>
+                        <Item marca= "ferrari"/>
+                        <Item marca= "bugatti"/>
+
+                    </ul>
+                    </>
+                    )
+        }
+
+        export default List
+        ```
 
 
 
 
 
-# aula
+# aulas
 - `aula 3` entendendo o JSX
 - `aula 4` criando os componentes
 - `aula 5` trabalhando com props
 - `aula 6` inserindo CSS no React
+- `aula 7` Utilizando React Fragments
 
 # imagens grátis
 - https://pixabay.com/pt/
