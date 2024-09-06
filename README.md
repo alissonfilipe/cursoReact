@@ -119,6 +119,33 @@
         export default List
         ```
 
+- `aula 8` props
+    - `ano_lancamento={1987}` forma de digitar o número
+    - `number` a gente vai passar entre as chaves
+    - `import PropTypes from 'prop-types'`
+    - o default é uma maneira bem simples de colocar valores padrões
+          ```javascript
+            import PropTypes from 'prop-types'
+
+            function Item({marca, ano_lancamento}){
+                return (
+                    <>
+                    <li>{marca} - {ano_lancamento}</li>
+                    </>
+                )
+            }
+
+            Item.propTypes ={
+                marca: PropTypes.string.isRequired,
+                ano_lancamento: PropTypes.number,
+            }
+            
+            Item.defaultProps = {
+            marca: 'Faltou a marca',
+            ano_lancamento: 0,
+            }
+            export default Item
+        ```
 
 
 
@@ -129,6 +156,7 @@
 - `aula 5` trabalhando com props
 - `aula 6` inserindo CSS no React
 - `aula 7` Utilizando React Fragments
+- `aula 8` props
 
 # imagens grátis
 - https://pixabay.com/pt/
