@@ -124,8 +124,9 @@
     - `number` a gente vai passar entre as chaves
     - `import PropTypes from 'prop-types'`
     - o default é uma maneira bem simples de colocar valores padrões 
-    <br>
-          ```javascript
+    
+
+        ```javascript
             import PropTypes from 'prop-types'
 
             function Item({marca, ano_lancamento}){
