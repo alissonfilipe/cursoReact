@@ -240,7 +240,53 @@
         export default Evento
     ```
 
+- `aula 12` Renderização condicional
+    - depois eu tenho que revisar a questão do useState e essa lógica
+    ```javascript
+        import { useState } from 'react'
 
+        function Condicional() {
+            const [email, setEmail] = useState()
+            const [userEmail, setUserEmail] = useState()
+
+            function enviarEmail(e) {
+                e.preventDefault()
+                setUserEmail(email)
+                console.log(userEmail)
+            }
+
+            function limparEmail(e) {
+
+                setUserEmail("")
+
+            }
+
+            return (
+                <div>
+                    <h2>Cadastre o seu email:</h2>
+                    <form>
+                        <input type="email"
+                            placeholder="digite o seu email"
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
+                        <button type="submit" onClick={enviarEmail} >
+                            Enviar Email
+                        </button>
+                        {userEmail && (
+                            <div>
+                                <p>O email do usuário é {userEmail}</p>
+                                <button onClick={limparEmail}>Limpar E-mail</button>
+                            </div>
+                        )}
+                    </form>
+                </div>
+            )
+        }
+
+        export default Condicional
+    ```
+
+- `aula 13` Renderização de listas
 
 # aulas
 - `aula 3` entendendo o JSX
@@ -251,6 +297,9 @@
 - `aula 8` props
 - `aula 9` Eventos
 - `aula 10` use State
+- `aula 11` eventos por props
+- `aula 12` Renderização condicional
+- `aula 13` Renderização de listas
 
 # imagens grátis
 - https://pixabay.com/pt/
