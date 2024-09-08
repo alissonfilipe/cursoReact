@@ -150,6 +150,29 @@
         ```
 
 
+- `aula 9` Eventos
+
+    - coisas interessantes sobre os Eventos
+    ```javascript
+            function Evento({ numero }) {
+
+            function meuEvento(e) {
+                e.preventDefault()
+                console.log(`Opa fui ativado ${numero}`)
+            }
+
+            return (
+                <div>
+                    <p>Clique para disparar um evento</p>
+                    <button onClick={meuEvento}>Ativar</button>
+                </div>
+            )
+        }
+
+        export default Evento
+    ```
+    - aqui tem o argumento e o onclick que pode ser alterado onde ele for chamado
+
 
 
 # aulas
@@ -159,6 +182,7 @@
 - `aula 6` inserindo CSS no React
 - `aula 7` Utilizando React Fragments
 - `aula 8` props
+- `aula 9` Eventos
 
 # imagens grátis
 - https://pixabay.com/pt/

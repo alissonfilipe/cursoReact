@@ -34,5 +34,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "- npm install --> baixar as dependências do projeto\r - npm start --> rodar a aplicação\r - quando eu coloquei o endereço da imagem seguido de uma /150 não funcionou\r - mas quando eu coloquei o endereço da imagem apenas, funcionou\r - no JSX todos os elementos precisam estar na classe pai\r - class -> é uma palavra reservada do react e usando `className`\r - `<div className=\"App\">`\r - Trabalhar com componentes comece com letras maiúsculas \r - cada componente tendo o seu arquivo e cada arquivo sendo exportado\r - cada componente pode ser reutilizado\r - atalho crl - D para selecionar vários elementos iguais",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }

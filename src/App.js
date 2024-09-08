@@ -1,31 +1,26 @@
 import './App.css';
 
-import SayMyName from './components/SayMyName';
-import Pessoa from './components/Pessoa';
-import Frase from './components/Frase';
-import List from './components/List.js';
+import Evento from './components/Evento';
+import Form from './components/Form';
 
 function App() {
- 
+
   const nome = "Labirinto"
 
-  
 
-  
+
+
 
 
 
   //retorno da função
   return (
 
-    <div className="App"> 
-      <Frase/>
-      <h1>Testando CSS</h1>
-      <SayMyName nome="matheus"/>
-      <SayMyName nome="alisson"/>
-      <SayMyName nome={nome} />
-      <Pessoa nome="Alisson" idade="21" profissao="Estagiário" foto="https://cdn.pixabay.com/photo/2018/03/26/20/49/tiger-3264048_640.jpg"/>
-      <List/>
+    <div className="App">
+      <h1>Testando Eventos</h1>
+      <Evento numero='1' />
+      <Evento numero='2' />
+      <Form />
     </div>
   );
 }
