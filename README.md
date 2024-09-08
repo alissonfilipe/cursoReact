@@ -174,7 +174,7 @@
     - aqui tem o argumento e o onclick que pode ser alterado onde ele for chamado
     - aqui temos um exemplo do prevent default 
 
-     ```javascript
+    ```javascript
         function Form() {
 
     function cadastrarUsuario(e) {
@@ -207,6 +207,38 @@
     - `<label htmlFor="name">ANme:</label>` 
     - `import { useState } from 'react'`
     - pegando campos
+
+- `aula 11` eventos por props
+    - um componente filho pode ativar o método com o componente pai
+    - acessar p método por meio de um evento
+    - aqui vemos reaproveitamnete de componetes 
+    - usando o componente filho para mudar o pai
+    ```javascript
+        import Button from "./evento/Button"
+
+        function Evento() {
+
+            function meuEvento() {
+
+                console.log(`Ativando o primeiro evento`)
+            }
+
+            function segundoEvento() {
+                console.log(`meu segundo eventos`)
+            }
+
+            return (
+                <div>
+                    <p>Clique para disparar um evento</p>
+                    <Button event={meuEvento} text='primeiro evento' />
+                    <Button event={segundoEvento} text='segundo evento' />
+
+                </div>
+            )
+        }
+
+        export default Evento
+    ```
 
 
 
