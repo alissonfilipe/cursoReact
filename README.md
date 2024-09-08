@@ -156,8 +156,8 @@
     ```javascript
             function Evento({ numero }) {
 
-            function meuEvento(e) {
-                e.preventDefault()
+            function meuEvento() {
+                
                 console.log(`Opa fui ativado ${numero}`)
             }
 
@@ -172,6 +172,41 @@
         export default Evento
     ```
     - aqui tem o argumento e o onclick que pode ser alterado onde ele for chamado
+    - aqui temos um exemplo do prevent default 
+
+     ```javascript
+        function Form() {
+
+    function cadastrarUsuario(e) {
+        e.preventDefault()
+        console.log("cadastrou o usuário")
+    }
+
+    return (
+        <div>
+            <h1>Meu cadastro:</h1>
+            <form onSubmit={cadastrarUsuario}>
+                <div>
+                    <input type="text" placeholder="Digite o seu nome"></input>
+                </div>
+                <div>
+                    <input type="submit" value="Cadastrar"></input>
+                </div>
+            </form>
+        </div>
+    )
+    }
+
+    export default Form
+    ```
+
+- `aula 10` use State
+    - é um hook do react
+    - adiciona funcionalidades que a gente deveria codificar na mão
+    - manusear os estados de um componente de forma simples
+    - `<label htmlFor="name">ANme:</label>` 
+    - `import { useState } from 'react'`
+    - pegando campos
 
 
 
@@ -183,6 +218,7 @@
 - `aula 7` Utilizando React Fragments
 - `aula 8` props
 - `aula 9` Eventos
+- `aula 10` use State
 
 # imagens grátis
 - https://pixabay.com/pt/

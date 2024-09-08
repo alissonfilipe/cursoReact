@@ -5,7 +5,7 @@ import Form from './components/Form';
 
 function App() {
 
-  const nome = "Labirinto"
+
 
 
 
