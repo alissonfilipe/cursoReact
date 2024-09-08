@@ -24,6 +24,8 @@
 - `aula 12` Renderização condicional
 - `aula 13` Renderização de listas
 
+`-----------------------------------------------------------------------------`
+
 - `aula 5` trabalhando com props
     - props são somente leitura
     - `<SayMyName nome="matheus"/>` forma de imprimir um valor
