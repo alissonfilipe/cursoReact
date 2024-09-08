@@ -11,6 +11,19 @@
 - cada componente pode ser reutilizado
 - atalho crl - D para selecionar vários elementos iguais 
 
+# aulas
+- `aula 3` entendendo o JSX
+- `aula 4` criando os componentes
+- `aula 5` trabalhando com props
+- `aula 6` inserindo CSS no React
+- `aula 7` Utilizando React Fragments
+- `aula 8` props
+- `aula 9` Eventos
+- `aula 10` use State
+- `aula 11` eventos por props
+- `aula 12` Renderização condicional
+- `aula 13` Renderização de listas
+
 - `aula 5` trabalhando com props
     - props são somente leitura
     - `<SayMyName nome="matheus"/>` forma de imprimir um valor
@@ -288,18 +301,7 @@
 
 - `aula 13` Renderização de listas
 
-# aulas
-- `aula 3` entendendo o JSX
-- `aula 4` criando os componentes
-- `aula 5` trabalhando com props
-- `aula 6` inserindo CSS no React
-- `aula 7` Utilizando React Fragments
-- `aula 8` props
-- `aula 9` Eventos
-- `aula 10` use State
-- `aula 11` eventos por props
-- `aula 12` Renderização condicional
-- `aula 13` Renderização de listas
+
 
 # imagens grátis
 - https://pixabay.com/pt/
