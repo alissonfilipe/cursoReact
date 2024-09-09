@@ -302,6 +302,35 @@
     ```
 
 - `aula 13` Renderização de listas
+    - uso da do map para renderizar itens em um array
+    - forma de declarar uma lista a baixo
+    - `const meusItens = ['react', 'vue', 'angular']`
+    - forma de usar essa lista abaixo
+    - `<OutraLista itens={meusItens} />`
+    - forma de usar lista vazia abaixo
+    - `<OutraLista itens={[]} />`
+
+    - forma de criar um componente de lista abaixo
+
+    ```javascript
+                function OutraLista({ itens }) {
+            return (
+                <>
+                    <h3>Minha lista de coisas boas</h3>
+                    {itens.length > 0 ? (
+                        itens.map((item, index) =>
+                            <p key={index}>{item}</p>
+                        ))
+                        : (
+                            <p>Não há itens na lista</p>
+                        )
+                    }
+                </>
+            )
+        }
+
+        export default OutraLista
+    ```
 
 
 
