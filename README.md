@@ -398,6 +398,13 @@
         export default SeuNome
     ```
 
+- `aula 15` React Router
+    - rota da home, etc
+    - muda de view para view
+    - para usar o react router precisa rodar esse comando `npm install react-router-dom`
+    - Switch foi trocado por Routes
+    - para não dar problemas na navegação `<Route exact path="/">`
+
 # imagens grátis
 - https://pixabay.com/pt/
 
