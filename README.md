@@ -23,6 +23,7 @@
 - `aula 11` eventos por props
 - `aula 12` Renderização condicional
 - `aula 13` Renderização de listas
+- `aula 14` State Lift
 
 <hr/>
 
@@ -332,7 +333,70 @@
         export default OutraLista
     ```
 
+- `aula 14` State Lift
+    - nesse código tem a função Suadação
+    - essa função via ser usado junto com o useSate
+    - useState para setar o nome
+    ```javascript
+    function Saudacao({ nome }) {
 
+    function gerarSaudacao(algumNome) {
+        return `Olá, ${nome}, tudo bem?`
+    }
+
+    return (
+        <>{nome && <p>{gerarSaudacao(nome)}</p>}</>
+    )
+    }
+
+    export default Saudacao
+    ```
+
+    - assim
+    ```javascript
+    import { useState } from 'react'
+
+    import './App.css';
+
+    import SeuNome from './components/SeuNome';
+    import Saudacao from './components/Saudacao';
+
+
+    function App() {
+    const [nome, setNome] = useState()
+
+    //retorno da função
+    return (
+
+        <div className="App">
+        <h1>State lift</h1>
+        <SeuNome setNome={setNome} />
+        <Saudacao nome={nome} />
+        </div>
+    );
+    }
+
+    // exportando o código
+    export default App;
+
+    ```
+
+    - também tem a função SeuNome
+    - chama a função setNome e ela é definida com um retorno
+    ```javascript
+            function SeuNome({ setNome }) {
+            return (
+                <div>
+                    <p>Digite o seu Nome:</p>
+                    <input type="text" placeholder="Qual é o seu nome?"
+                        onChange={(e) => setNome(e.target.value)}
+                    ></input>
+                </div>
+            )
+        }
+
+        export default SeuNome
+    ```
 
 # imagens grátis
 - https://pixabay.com/pt/
