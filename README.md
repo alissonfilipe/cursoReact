@@ -24,7 +24,8 @@
 - `aula 12` Renderização condicional
 - `aula 13` Renderização de listas
 - `aula 14` State Lift
-- `auila 15` React Router
+- `aula 15` React Router
+- `aula 16` React Icons
 
 <hr/>
 
@@ -405,6 +406,19 @@
     - para usar o react router precisa rodar esse comando `npm install react-router-dom`
     - Switch foi trocado por Routes
     - para não dar problemas na navegação `<Route exact path="/">`
+
+
+- `aula 16` React Icons
+    - aula bonus
+    - projeto começa na próxima aula
+    - react icons é instalado via vpn
+    - permite instalar ícones ao projeto uma sintaxe parecida de componentes
+    - condensa i´numero ícones
+    - `npm install react-icons`
+    - `import { FaFacebook } from "react-icons/fa"`
+    - muito cuidado com o - na hora de declarar 
+    - próxima aula vamos começar a criar o projeto
+
 
 # imagens grátis
 - https://pixabay.com/pt/
